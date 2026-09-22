@@ -10,7 +10,7 @@ class PreReleaseFilm : public CinemaFilm {
 private:
 	string releaseDate;
 	string preSaleStartDate;
-	string preSaleQuota;
+	int preSaleQuota;
 
 public:
 	// empty constructor
@@ -18,7 +18,7 @@ public:
 	}
 
 	// constructor with parameters
-	PreReleaseFilm(string releaseDate, string preSaleStartDate, string preSaleQuota) {
+	PreReleaseFilm(string releaseDate, string preSaleStartDate, int preSaleQuota) {
 		this->releaseDate = releaseDate;
 		this->preSaleStartDate = preSaleStartDate;
 		this->preSaleQuota = preSaleQuota;
@@ -43,11 +43,11 @@ public:
 	}
 
 	// preSaleQuota getter and setter
-	string getPreSaleQuota() {
+	int getPreSaleQuota() {
 		return preSaleQuota;
 	}
 
-	void setPreSaleQuota(string preSaleQuota) {
+	void setPreSaleQuota(int preSaleQuota) {
 		this->preSaleQuota = preSaleQuota;
 	}
 
