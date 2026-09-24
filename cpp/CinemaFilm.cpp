@@ -8,47 +8,63 @@ class CinemaFilm : public Film {
 
 // private attributes
 private:
-	string studioNumber;
-	string screenFormat;
-	int ticketPrice;
+    string distributor;
+    string ageRating;
+    int baseTicketPrice;
 
 public:
 	// empty constructor
 	CinemaFilm() {
 	}
 
-	// constructor with parameters
-	CinemaFilm(string studioNumber, string screenFormat, int ticketPrice) {
-		this->studioNumber = studioNumber;
-		this->screenFormat = screenFormat;
-		this->ticketPrice = ticketPrice;
-	}
+    // constructor with only child class attributes
+    CinemaFilm(string distributor, string ageRating, int baseTicketPrice) {
+        this->distributor = distributor;
+        this->ageRating = ageRating;
+        this->baseTicketPrice = baseTicketPrice;
+    }
 
-	// studioNumber getter and setter
-	string getStudioNumber() {
-		return studioNumber;
-	}
+	// constructor with all attributes from both parent and child classes
+    CinemaFilm(string filmCode, string title, string genre, int duration,
+				float averageRating, string distributor, string ageRating,
+				int baseTicketPrice) {
+        setFilmCode(filmCode);
+        setTitle(title);
+        setGenre(genre);
+        setDuration(duration);
+        setAverageRating(averageRating);
+        this->distributor = distributor;
+        this->ageRating = ageRating;
+        this->baseTicketPrice = baseTicketPrice;
+    }
 
-	void setStudioNumber(string studioNumber) {
-		this->studioNumber = studioNumber;
-	}
+	// distributor getter and setter
+    string getDistributor() {
+        return distributor;
+    }
 
-	// screenFormat getter and setter
-	string getScreenFormat() {
-		return screenFormat;
-	}
+    void setDistributor(string distributor) {
+        this->distributor = distributor;
+    }
 
-	void setScreenFormat(string screenFormat) {
-		this->screenFormat = screenFormat;
-	}
 
-	// ticketPrice getter and setter
-	int getTicketPrice() {
-		return ticketPrice;
-	}
+	// ageRating getter and setter
+    string getAgeRating() {
+        return ageRating;
+    }
 
-	void setTicketPrice(int ticketPrice) {
-		this->ticketPrice = ticketPrice;
-	}
+    void setAgeRating(string ageRating) {
+        this->ageRating = ageRating;
+    }
 
+
+	// baseTicketPrice getter and setter
+    int getBaseTicketPrice() {
+        return baseTicketPrice;
+    }
+
+    void setBaseTicketPrice(int baseTicketPrice) {
+        this->baseTicketPrice = baseTicketPrice;
+    }
 };
+
