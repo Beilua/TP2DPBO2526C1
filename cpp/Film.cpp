@@ -4,8 +4,8 @@ using namespace std;
 
 // class to represent a film
 class Film {
+    // private attributes
     private:
-        // declare attributes
         string filmCode;
         string title;
         string genre;
@@ -74,5 +74,9 @@ class Film {
 
         void setAverageRating(float averageRating) {
             this->averageRating = averageRating;
+        }
+
+        // destructor
+        ~Film() {
         }
 };

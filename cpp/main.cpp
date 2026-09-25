@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// function declarations
 void displayFilms(vector<PremiumFormatCinemaFilm>& filmList);
 void addFilm(vector<PremiumFormatCinemaFilm>& filmList, const vector<string>& genres);
 vector<size_t> calculateColumnWidths(const vector<vector<string>>& rows);
