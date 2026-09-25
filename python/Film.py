@@ -1,7 +1,8 @@
 # class to represent a film
 class Film:
-    # constructor with parameters
+    # private attributes
     def __init__(self, filmCode, title, genre, duration, averageRating):
+        # empty constructor
         self.filmCode = filmCode
         self.title = title
         self.genre = genre
@@ -42,3 +43,7 @@ class Film:
 
     def setAverageRating(self, averageRating):
         self.averageRating = averageRating
+
+    # destructor
+    def __del__(self):
+        pass

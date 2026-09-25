@@ -1,32 +1,36 @@
 from Film import Film
 
-
 # class to represent a cinema film inheriting from Film class
 class CinemaFilm(Film):
-    # constructor with parameters
-    def __init__(self, studioNumber, screenFormat, ticketPrice):
-        super().__init__()
-        self.studioNumber = studioNumber
-        self.screenFormat = screenFormat
-        self.ticketPrice = ticketPrice
+    # private attributes
+    def __init__(self, filmCode, title, genre, duration, averageRating, distributor, ageRating, baseTicketPrice):
+        # empty constructor
+        super().__init__(filmCode, title, genre, duration, averageRating)
+        self.distributor = distributor
+        self.ageRating = ageRating
+        self.baseTicketPrice = baseTicketPrice
 
-    # studioNumber getter and setter
-    def getStudioNumber(self):
-        return self.studioNumber
+    # distributor getter and setter
+    def getDistributor(self):
+        return self.distributor
 
-    def setStudioNumber(self, studioNumber):
-        self.studioNumber = studioNumber
+    def setDistributor(self, distributor):
+        self.distributor = distributor
 
-    # screenFormat getter and setter
-    def getScreenFormat(self):
-        return self.screenFormat
+    # ageRating getter and setter
+    def getAgeRating(self):
+        return self.ageRating
 
-    def setScreenFormat(self, screenFormat):
-        self.screenFormat = screenFormat
+    def setAgeRating(self, ageRating):
+        self.ageRating = ageRating
 
-    # ticketPrice getter and setter
-    def getTicketPrice(self):
-        return self.ticketPrice
+    # baseTicketPrice getter and setter
+    def getBaseTicketPrice(self):
+        return self.baseTicketPrice
 
-    def setTicketPrice(self, ticketPrice):
-        self.ticketPrice = ticketPrice
+    def setBaseTicketPrice(self, baseTicketPrice):
+        self.baseTicketPrice = baseTicketPrice
+
+    # destructor
+    def __del__(self):
+        pass
