@@ -70,7 +70,7 @@ int main() {
 
     cout << "1. /add (ADD NEW ABSOLUTE CINEMA FILM)" << '\n';
     cout << "2. /display (DISPLAY ALL ABSOLUTE CINEMA FILM)" << '\n';
-    cout << "7. /exit (EXIT)" << '\n';
+    cout << "3. /exit (EXIT)" << '\n';
 
     cout << "\nenter your command: " << '\n';
 
