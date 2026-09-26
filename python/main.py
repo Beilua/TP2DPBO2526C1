@@ -353,7 +353,7 @@ def addFilm(filmList, genres):
     # add it to the list
     filmList.append(newFilm)
     # print success message
-    print("absolute cinema. new film has been added.\n")
+    print("absolute cinema. new film has been added. ☑\n")
 
 
 if __name__ == "__main__":

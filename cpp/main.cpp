@@ -460,5 +460,5 @@ void addFilm(vector<PremiumFormatCinemaFilm>& filmList, const vector<string>& ge
     // add it to the list
     filmList.push_back(newFilm);
     // print success message
-    cout << "absolute cinema. new film has been added.\n\n";
+    cout << "absolute cinema. new film has been added. ☑\n\n";
 }

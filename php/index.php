@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/PremiumFormatCinemaFilm.php';
-session_name('absolute_cinema_v5');
+session_name('absolute_cinema_session');
 session_start();
 
 // genre list for validation and dropdown options
