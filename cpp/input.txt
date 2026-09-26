@@ -1,0 +1,43 @@
+=== MENAMPILKAN TABEL ===
+/display
+
+=== CASE SUCCESS === 
+/add
+PCF006
+Forgotten Island
+comedy
+Universal Pictures
+PG
+108
+15
+7.6
+Dolby Atmos
+10
+false
+
+=== CASE ERROR ===
+/add
+pcf1
+PCF001
+PCF006
+Forgotten Island
+idk
+comedy
+Universal Pictures
+PG
+abc
+108000
+108
+-1
+0.5
+99999999
+15
+20
+7.6
+Dolby Atmos
+-10
+0.1
+foo
+10
+no
+false
